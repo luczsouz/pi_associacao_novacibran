@@ -1,0 +1,85 @@
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   /* criando header/nav  */
+   header{
+    background-image: url(/IMG/INICIO.png);
+    width: 100%;
+    height: auto  ;
+   }
+
+.navmenu{
+   width: 100vh;
+    transform-origin: center top;
+    margin: auto;
+    
+}   
+
+.containerHeader{
+   width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black; 
+    display: grid;
+    gap: 5px; /*Distância entre as células*/
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+}
+
+.logo{
+
+   grid-column: 1/4;
+   grid-row: 1/3;
+}
+
+.Titulo{
+   grid-column: 7/9;
+   grid-row: 1/2;
+   color: white;
+}
+
+.Texto01{
+   grid-column: 7/12;
+   grid-row: 2/2;
+   color: white;
+}
+
+/* Criando main */
+.secao01{
+   width: 100%;
+   background-image: url(/IMG/PINCIPAL.png);
+   margin: auto;
+   height: auto;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: repeat(6, auto);
+   display: grid;
+}
+
+.TituloMain{
+   grid-column: 6/9;
+   grid-row: 1/2;
+   /* border: 1px solid black; */
+}
+
+.TextoMain{
+   grid-column: 6/9;
+   grid-row: 3/4;
+   
+}
+
+/* .img{ */
+   /* display: grid; */
+   /* grid-template-columns: repeat(12, 1fr); */
+   /* grid-template-rows: repeat(6, auto); */
+/* } */
+
+
+
+#img01{
+   width: 150px;
+   grid-column: 2/3;
+   grid-row: 5/6;
+}
