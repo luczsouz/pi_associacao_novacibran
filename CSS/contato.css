@@ -1,0 +1,27 @@
+header{
+    background-color: #754439;
+}
+
+#TITULO{
+    margin-left: 100px;
+    border: 1px solid black;
+    
+}
+h1{
+    color: #fef9f6;
+    margin-left: 350px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+    /* border: 1px solid black; */
+    background-color: #0082ff;
+    color: #fef9f6;
+}
+
+form{
+grid-column: 2/12;
+grid-row: 1/2;
+}

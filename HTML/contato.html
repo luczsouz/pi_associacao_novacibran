@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENTRE EM CONTATO</title>
+    <title>Documento</title>
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 <body>
+    <header>
+        <div class="TITULO">
+            <h1>SEJA UM PARCEIRO<BR>ENTRE EM CONTATO</h1>
+        </div>
     
+    </header>
+
+
+    <main class="container">
+
+    <form method="post" id="formTeste" action="mailto:contato@gmail.com" class="formulario">
+        <fieldset>
+            <label for="formNome">Nome:</label>
+            <input id="formNome" type="text" name="nome" size="60">
+        </fieldset>
+<br>
+        <fieldset>
+            <label for="formEmail">E-mail:</label>
+            <input id="formEmail" type="email" name="email" size="60">
+        </fieldset>
+
+    
+
+        <fieldset>
+           <label for="formTelefone">Telefone:</label>
+            <input id="formTelefone" type="tel" name="telefone" size="60" placeholder="(xx) xxxxx-xxxx">
+        </fieldset>  
+
+        <br>
+
+    <legend> <h2>Sugestões, elogios e críticas</h2></legend>
+    <textarea name="mensagem" rows="10" cols="100"  placeholder="Deixe sua mensagem aqui" required></textarea>
+
+    </br></br>      
+
+    </fieldset>
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+
+    </form>
+    </main>
 </body>
 </html>
