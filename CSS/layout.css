@@ -1,51 +1,122 @@
-   *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   
-   /* criando header/nav  */
-   header{
-    background-image: url(/IMG/INICIO.png);
-    width: 100%;
-    height: auto  ;
-   }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.navmenu{
-   width: 100vh;
-    transform-origin: center top;
-    margin: auto;
-    
-}   
+body {
+  font-family: Arial, sans-serif;
+}
 
-.containerHeader{
-   width: 80vw;
-    height: auto;
+.header {
+  background-image: url('img/fundo-azulado.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 30, 70, 0.7);
+  background-blend-mode: overlay;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.social-links a {
+  margin-right: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00aced;
+  transform: scale(1.1);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ddd;
+}
+
+.banner {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.banner img {
+  width: 100px;
+  height: auto;
+}
+
+.texto h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  max-width: 500px;
+  line-height: 1.6;
+}
+/*FIM HEADER*/
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .banner img {
     margin: 0 auto;
-    /* border: 1px solid black;  */
-    display: grid;
-    gap: 5px; /*Distância entre as células*/
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, auto);
+  }
 }
 
-.logo{
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-   grid-column: 1/4;
-   grid-row: 1/3;
+  .texto h2 {
+    font-size: 20px;
+  }
+
+  .texto p {
+    font-size: 14px;
+  }
 }
 
-.Titulo{
-   grid-column: 7/9;
-   grid-row: 1/2;
-   color: white;
-}
-
-.Texto01{
-   grid-column: 7/12;
-   grid-row: 2/2;
-   color: white;
-}
 
 /* Criando main */
 .secao01{
