@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background: url(/IMG/INICIO.png) no-repeat center center fixed; */
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height:100vh;
+  background-color: #ffffff00;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bold;
+  /* border: 1px solid black; */
+
+}
+
+.linha01{
+  border-top: 1px solid #ffffff;
+  margin: 10px auto;
+  width: 76%;
+}
+
+.header-box {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  /* align-items: center; */
+  gap: 0;
+}
+
+/* Áreas */
+.logo-area, .text-area {
+  width: 80vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+
+}
+
+
+/* Cores */
+.logo-area {
+  /* background-color: black;
+   */
+   
+}
+
+.text-area {
+  /* background-color: #0080ff; */
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(4,auto);
+display: grid;
+}
+
+#TituloHeader{
+    grid-column: 1/4;
+    grid-row: 1/3   ;
+}
+
+#TextoHeader{
+    grid-row: 2/4;
+    grid-column: 1/6;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+  .main-box {
+    flex-direction: column;
+  }
+
+  .logo-area, .text-area {
+    width: 90vw;
+    height: 200px;
+  }
+}
