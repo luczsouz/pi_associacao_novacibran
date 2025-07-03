@@ -1,203 +1,256 @@
-/* Reset básico */
-
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   
-   
-
-/* CRIANDO SEÇÕES*/
-.secao01{
-
-   width: 100%;
-   height: auto;
-   display: grid;
-   display: flex;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(3, auto);
-   /* background-image: url(/IMG/PINCIPAL.png);  */
+/* ------------------------------
+🔁 Reset Global
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* .TituloMain{
-   grid-column: 5/10;
-   grid-row: 1/2;
-   color: black;
-   border: 2px solid palevioletred;
-   /* width: 135px; */
-} */
-
-.TextoMain{
-   grid-column: 6/10;
-   grid-row: 3/4;
-   color: black; 
+/* ------------------------------
+🎨 Tipografia Base
+------------------------------ */
+body {
+  font-family: Arial, sans-serif;
+  color: #003366;
+  background-color: #ffffff;
 }
 
-/*secao 02*/
-.fundo02{
-   height: auto;
-   /* background-color: #61763c; */
+/* ------------------------------
+🏁 Seção Principal (Banner)
+------------------------------ */
+.secao01 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+  background-image: url('/IMG/PINCIPAL.png'); /* Altere o caminho se necessário */
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
 }
 
-.containerImg{
-   width: 162px;
-   height: 183px;
-   display: grid;
-     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3,auto);
-    display: flex;
-    align-items: center;
+.TituloMain {
+  grid-column: 6 / 10;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.TextoMain {
+  grid-column: 6 / 9;
+  grid-row: 3 / 4;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+🖼️ Seção de Imagens Redondas
+------------------------------ */
+.containerImg {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.img-round {
+  width: 153px;
+  height: 182px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 #img01{
-   grid-column: 2/3;
-   grid-row: 1/2;
    width: 153px;
    height: 182px;
    border-radius: 50%;
+   object-fit: cover;
 }
 
 #img02{
-   grid-column: 4/5;
-   grid-row: 1/2;
+   width: 153px;
+   height: 182px;
    border-radius: 50%;
-
+   object-fit: cover;
 }
 
 #img03{
-   grid-column: 5/6;
-   grid-row: 1/2;
+   width: 153px;
+   height: 182px;
    border-radius: 50%;
-
+   object-fit: cover;
 }
 
 #img04{
-   grid-column: 7/8;
-   grid-row: 1/2;
+   width: 153px;
+   height: 182px;
    border-radius: 50%;
-
+   object-fit: cover;
 }
 
+/* ------------------------------
+🤝 Seção de Parceiros
+------------------------------ */
+.containerGridCard {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+  background-color: #004aad;
+  width: 100%;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
+.card-img-top,
+.card-02 {
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid black;
+  object-fit: cover;
+}
 
+.card-img-top {
+  grid-row: 2 / 4;
+  grid-column: 4 / 5;
+}
 
+.card-02 {
+  grid-row: 2 / 4;
+  grid-column: 7 / 9;
+}
 
+#txtCard {
+  grid-column: 6 / 7;
+  font-size: 60px;
+  text-align: center;
+}
 
+/* ------------------------------
+📅 Agenda de Eventos
+------------------------------ */
+.container {
+  padding: 20px;
+}
 
+.agenda {
+  background-color: #003366;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto 30px auto;
+  max-width: 500px;
+  text-align: left;
+}
 
+.agenda h2 {
+  margin-bottom: 20px;
+}
 
+.eventos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  font-size: 0.9rem;
+}
 
+.eventos p {
+  margin: 2px 0;
+}
 
+/* ------------------------------
+❤️ Mensagem Central
+------------------------------ */
+.mensagem {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
 
+.mensagem h3 {
+  margin-top: 20px;
+  color: #003366;
+  font-size: 1.4rem;
+}
 
+/* ------------------------------
+🔻 Rodapé
+------------------------------ */
+.rodape {
+  background-color: #003366;
+  color: white;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
+.rodape p {
+  margin: 0;
+  text-align: left;
+  font-size: 0.85rem;
+}
 
+.icones img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsivo */
+/* ------------------------------
+📱 Responsividade
+------------------------------ */
 @media (max-width: 768px) {
-  .header-content {
+  .secao01,
+  .containerGridCard {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     text-align: center;
   }
 
-  .banner {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .TituloMain,
+  .TextoMain {
+    grid-column: 1 / -1;
   }
 
-  .banner img {
-    margin: 0 auto;
+  .card-img-top,
+  .card-02 {
+    grid-column: 1 / -1;
+    margin: 10px auto;
+  }
+
+  #txtCard {
+    font-size: 36px;
+  }
+
+  .containerImg {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (max-width: 480px) {
-  .menu {
+  .rodape {
     flex-direction: column;
-    gap: 10px;
+    text-align: center;
   }
 
-  .texto h2 {
-    font-size: 20px;
+  .rodape p {
+    margin-bottom: 10px;
   }
 
-  .texto p {
-    font-size: 14px;
+  .mensagem h3 {
+    font-size: 1.2rem;
   }
 }
-
-
-/* Criando main */
-.secao01{
-   width: 100%;
-   background-image: url(/IMG/PINCIPAL.png);
-   margin: auto;
-   height: auto;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(6, auto);
-   display: grid;
-}
-
-.TituloMain{
-   grid-column: 6/10;
-   grid-row: 1/2;
-   /* border: 1px solid black; */
-}
-
-.TextoMain{
-   grid-column: 6/9;
-   grid-row: 3/4;
-   justify-content: center;
-   
-}
-
-/* .img{ */
-   /* display: grid; */
-   /* grid-template-columns: repeat(12, 1fr); */
-   /* grid-template-rows: repeat(6, auto); */
-/* } */
-
-
-
