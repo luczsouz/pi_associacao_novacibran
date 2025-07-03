@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/sections.css">
+    <link rel="stylesheet" href="./CSS/carrosel.css">
+    <script src="./script.js"></script>
 </head>
 <body>
      <header style="background-image: url(/IMG/INICIO.png);">
       <nav>
         <ul>
-          <li><a href="#">PRINCIPAL</a></li>
-          <li><a href="#">SERVIÇOS</a></li>
-          <li><a href="#">CONTATO</a></li>
+          <li><a href="./index.html">PRINCIPAL</a></li>
+          <li><a href="#">/</a></li>
+          <li><a href="./contato.html">CONTATO</a></li>
         </ul>
         <div class="linha01"></div>
       </nav>
@@ -26,7 +29,7 @@
       <div class="text-area">
         <h1 id="TituloHeader">Solidariedade</h1>
 
-        <p id="TextoHeader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, alias. Voluptatem inventore, iste totam esse eos veritatis molestias, ipsam animi quibusdam laborum atque, suscipit aliquid sequi? Accusantium alias possimus ea.</p>
+        <p id="TextoHeader">Proporcionamos assistência e apoio a comunidade, especialmente a moradores de rua, buscando restabelecer a dignidade e  promover a reintegração social. </p>
       </div>
       </div>
     </header>
@@ -63,9 +66,24 @@
              
         </section>
 
-        <section class="carrosel01">
+        <section class="fundocarrosel">
+            <div class="carrossel-container">
+    <div class="carrossel">
+      <button class="prev" onclick="mudarSlide(-1)">❮</button>
 
-            
+      <div class="slides fade">
+        <img src="./IMG/cafe_manha.png" alt="Projeto 1">
+      </div>
+      <div class="slides fade">
+        <img src="projeto2.png" alt="Projeto 2">
+      </div>
+      <div class="slides fade">
+        <img src="projeto3.png" alt="Projeto 3">
+      </div>
+
+      <button class="next" onclick="mudarSlide(1)">❯</button>
+    </div>
+  </div>
         </section>
 
 
@@ -90,8 +108,9 @@
 
         <!-- Coluna Direita -->
         <div class="footer-direita">
-          <div class="mapa"> 
-            <img src="#" alt="">MAPA</div>
+            <div class="mapa"> 
+                <img src="./IMG/mapa.jpeg" alt="" id="psMapa">
+            </div>
         </div>
 
       </div>

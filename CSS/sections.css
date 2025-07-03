@@ -16,20 +16,22 @@
    display: grid;
    display: flex;
    grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(6, auto);
+   grid-template-rows: repeat(3, auto);
    /* background-image: url(/IMG/PINCIPAL.png);  */
 }
 
-.TituloMain{
-   grid-column: 6/9;
+/* .TituloMain{
+   grid-column: 5/10;
    grid-row: 1/2;
    color: black;
-}
+   border: 2px solid palevioletred;
+   /* width: 135px; */
+} */
 
 .TextoMain{
    grid-column: 6/10;
    grid-row: 3/4;
-   color: black;
+   color: black; 
 }
 
 /*secao 02*/
@@ -39,60 +41,53 @@
 }
 
 .containerImg{
-   width: auto;
-   height: auto;
+   width: 162px;
+   height: 183px;
    display: grid;
      grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3,auto);
+    display: flex;
+    align-items: center;
 }
-
 
 #img01{
    grid-column: 2/3;
    grid-row: 1/2;
    width: 153px;
-   height: 181px;
+   height: 182px;
+   border-radius: 50%;
 }
 
 #img02{
-   grid-column: 4/6;
-   grid-row: 1/1;
+   grid-column: 4/5;
+   grid-row: 1/2;
+   border-radius: 50%;
+
 }
 
 #img03{
-   grid-column: 7/9;
-     grid-row: 1/1;
+   grid-column: 5/6;
+   grid-row: 1/2;
+   border-radius: 50%;
+
 }
 
 #img04{
-   grid-column: 10/12;
-   grid-row: 1/1;
-}
-
-/*responsivo secao 02*/
-@media screen and (max-width:767px){
-
-.containerImg{
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6,auto);
-}
-
-.img01{
-   grid-column: 2/4;
-   grid: 1/2;
-}
-
-.img02{
-   grid-column: 7/9;
-   grid-row: 1/2; 
-}
-
-
-
-
+   grid-column: 7/8;
+   grid-row: 1/2;
+   border-radius: 50%;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,7 +181,7 @@
 }
 
 .TituloMain{
-   grid-column: 6/9;
+   grid-column: 6/10;
    grid-row: 1/2;
    /* border: 1px solid black; */
 }
@@ -194,6 +189,7 @@
 .TextoMain{
    grid-column: 6/9;
    grid-row: 3/4;
+   justify-content: center;
    
 }
 
@@ -205,8 +201,3 @@
 
 
 
-/* #img01{
-   width: 150px;
-   grid-column: 2/3;
-   grid-row: 5/6;
-} */
