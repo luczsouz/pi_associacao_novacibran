@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 
 /* LOGO */
@@ -36,13 +37,16 @@
   margin-bottom: 20px;
   box-sizing: border-box;
   margin: 20px 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#imgfooter{
-    width: 70px;
-    height: 50px;
+#logo-footer{
+  width: 68px;
+  height: 50px;
+  margin: auto;
+  float: left;
 }
-
 
 /* Texto Esquerdo (quadrado) */
 .box-texto-esquerdo {
@@ -52,15 +56,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  /* text-align: center; */
-  
+  font-size: 30px;
+  text-align: center;
 }
 
 /* Direita */
 .footer-direita {
-  background-color: #0080ff;
+  /* background-color: #0080ff; */
   padding: 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -68,22 +73,15 @@
 /* Mapa */
 .mapa {
   width: 100%;
-  max-width: 400px;
-  height: 300px;
+  max-width: 700px;
+  height: 400px;
   /* background-color: black; */
-  color: white;
+  /* color: white; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; 
+  justify-content: center;  */
   margin-bottom: 10px;
   font-size: 24px;
-   
-}
-
-#psMapa{
-    width: 400px;
-    margin-top: 180px;
-    border: 3px solid white;
 }
 
 /* Texto Branco */
@@ -143,10 +141,15 @@
   }
 
   .direitos {
+    width: 100%;
+    height: auto;
     text-align: center;
     align-self: center;
-    width: auto;
+    margin: 20px auto 0 auto;
+    padding: 10px 0;
+    display: block;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -161,5 +164,38 @@
 
   .texto-branco {
     font-size: 16px;
+  }
+}
+/* Redes Sociais */
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: white;
+}
+
+.tamanhoicon{
+  font-size: 30px;
+}
+
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-item i {
+  font-size: 20px;
+}
+
+/* Responsivo para redes sociais */
+@media (max-width: 1024px) {
+  .redes-sociais {
+    align-items: center;
+    text-align: center;
   }
 }
